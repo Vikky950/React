@@ -1,11 +1,9 @@
-import React from 'react'
 
+import TicTocToe from "./components/tic-toc-toe";
 
-function App() {
-  return (
-    <div >
-    </div>
-  );
+export default function App() {
+    return(
+        <TicTocToe/>
+    )
 }
-
-export default App;
+ 
