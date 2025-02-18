@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body{
-    background-color: black;
+    background-color:white;
 }
+
+@layer utilities {
+    .clip-chat {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 73%, 100% 100%, 97% 90%, 0 88%);
+    }
+  }
+  @layer utilities {
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hidden {
+      -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+      scrollbar-width: none; /* Hide scrollbar in Firefox */
+    }}

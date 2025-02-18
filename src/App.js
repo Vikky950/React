@@ -1,9 +1,19 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; // ✅ Added Link
+import EhomePage from "./components/EhomePage"; // ✅ Ensure correct filename
 
-import TicTocToe from "./components/tic-toc-toe";
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/"></Link> {/* ✅ Fixed missing Link import */}
+      </nav>
 
-export default function App() {
-    return(
-        <TicTocToe/>
-    )
+      <Routes>
+        <Route path="/" element={<EhomePage />} />
+      </Routes>
+    </Router>
+  );
 }
- 
+
+export default App;
